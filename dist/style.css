@@ -1,2 +1,4 @@
-body p {
-  color: red; }
+body {
+  background: purple; }
+  body p {
+    color: red; }

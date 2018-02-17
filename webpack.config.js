@@ -2,10 +2,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: './src/app.js',
+    entry: {   
+        app: './src/app.js',  
+        components: './src/root.js'   
+    },
     output: {
         path: __dirname + '/dist',
-        filename: 'app.bundle.js'
+        filename: '[name].js'
     },
     plugins: [new HtmlWebpackPlugin({
         template: './src/index.html',

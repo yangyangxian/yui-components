@@ -2,9 +2,12 @@ import css from './app.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './Root';
+import {Root,Input} from './Root';
 
 ReactDOM.render(
-  <Root></Root>,
+  <div>
+    <Root></Root>
+    <Input></Input>
+  </div>,
   document.getElementById('root')
 );
